@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="./user.png" type="image/x-icon">
+</head>
+<body>
+    <div class="login-container">
+            <a href="#">
+            <img class="logo" src="img/justGo-logo-light.png" alt="justGO" />
+          </a>
+        <form class="login-form" id="loginForm" onsubmit="return func(event)">
+            <h2>Login</h2>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <input type="checkbox" id="rememberMe" name="rememberMe">
+                <label for="rememberMe">Remember Me</label>
+            </div>
+            <button type="submit">LOGIN</button>
+            <div class="register-link">
+                <p>Don't have an account? <a href="signup.html">Register</a></p>
+            </div>
+        </form>
+    </div>
+    <script>
+       function func(event){
+         event.preventDefault();
+         var username = document.getElementById("username").value;
+         var password = document.getElementById("password").value;
+         if(username === 'Harshitha M R' && password === '123456'){                  
+            alert("Login successful!");
+            window.location.assign("index.html");
+         } else {
+            alert("Invalid username or password");
+         }
+         return false; 
+       } 
+    </script> 
+</body>
+</html>
