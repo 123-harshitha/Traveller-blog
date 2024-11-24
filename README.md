@@ -1,8 +1,5 @@
 # ✈️ JustGO — Travel Agency
 
-A course project for the course _Introduction to Web Programming_ at FMI in Plovdiv University.
-
-.
 
 ## 📝 Description
 
@@ -35,5 +32,3 @@ JustGO Travel Agency has been providing clients with the best travel guides, tra
 - payment section
 - Footer
 
-
-)
